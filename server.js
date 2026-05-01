@@ -5,7 +5,7 @@ const Products=require('./model/productSchmena');
 const app=express();
 
 connect()
-
+app.set('trust proxy', true);
 
 app.get("/",function(req,res){
     console.log(req.ip);
