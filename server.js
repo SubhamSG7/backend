@@ -8,7 +8,7 @@ connect()
 
 
 app.get("/",function(req,res){
-    console.log(req.ip);
+    console.log(req);
     
     res.send("Welcome to the backend")
 })
